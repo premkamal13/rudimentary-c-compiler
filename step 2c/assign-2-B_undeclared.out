@@ -1,0 +1,12 @@
+1: ID: main
+	 reduced: direct_declarator -> identifier
+1: LEFT_ROUND_BRACKET
+1: RIGHT_ROUND_BRACKET
+	 reduced: direct_declarator -> direct_declarator LR RR
+2: LEFT_FLOWER_BRACKET
+	 reduced: declarator -> direct_declarator
+3: ID: abc
+3: EQ
+	 reduced: primary_expression -> identifier
+3: ERROR: Undeclared Variable: abc not declared
+Exiting...

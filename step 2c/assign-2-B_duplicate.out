@@ -1,0 +1,30 @@
+1: ID: main
+	 reduced: direct_declarator -> identifier
+1: LEFT_ROUND_BRACKET
+1: RIGHT_ROUND_BRACKET
+	 reduced: direct_declarator -> direct_declarator LR RR
+2: LEFT_FLOWER_BRACKET
+	 reduced: declarator -> direct_declarator
+3: INT
+	 reduced: type_specifier -> INT
+3: ID: ijk
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: direct_declarator -> identifier
+3: SEMICOLON
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+4: INT
+	 reduced: type_specifier -> INT
+4: ID: abc
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: direct_declarator -> identifier
+4: COMMA
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+4: ID: ijk
+	 reduced: direct_declarator -> identifier
+4: ERROR: Duplicate declaration: ijk already declared in line number 3
+Exiting...

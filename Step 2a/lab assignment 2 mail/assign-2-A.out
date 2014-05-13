@@ -1,0 +1,289 @@
+1: INT
+	 reduced: type_specifier -> INT
+1: ID: i
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+1: SEMICOLON
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+	 reduced: external_declaration -> declaration
+	 reduced: translation_unit -> external_declaration
+2: CHAR
+	 reduced: type_specifier -> CHAR
+2: ID: a
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+2: COMMA
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+2: ID: b
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+2: COMMA
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator_list COMMA init_declarator
+2: ID: c
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+2: SEMICOLON
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator_list COMMA init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+	 reduced: external_declaration -> declaration
+	 reduced: translation_unit -> translation_unit external_declaration
+3: INT
+	 reduced: type_specifier -> INT
+3: ID: j
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+3: EQ
+	 reduced: declarator -> direct_declarator
+3: Number: 10
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+3: SEMICOLON
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: initializer -> assignment_expression
+	 reduced: init_declarator -> declarator EQ initializer
+	 reduced: init_declarator_list -> init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+	 reduced: external_declaration -> declaration
+	 reduced: translation_unit -> translation_unit external_declaration
+4: INT
+	 reduced: type_specifier -> INT
+4: ID: x
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+4: LEFT_SQUARE_BRACKET
+4: Number: 10
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+4: RIGHT_SQUARE_BRACKET
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: constant_expression -> conditional_expression
+	 reduced: direct_declarator -> direct_declarator LS constant_expression RS
+4: SEMICOLON
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+	 reduced: external_declaration -> declaration
+	 reduced: translation_unit -> translation_unit external_declaration
+5: INT
+	 reduced: type_specifier -> INT
+5: ID: y
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+5: LEFT_SQUARE_BRACKET
+5: RIGHT_SQUARE_BRACKET
+	 reduced: direct_declarator -> direct_declarator LS RS
+5: EQ
+	 reduced: declarator -> direct_declarator
+5: LEFT_FLOWER_BRACKET
+5: Number: 1
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+5: COMMA
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: initializer -> assignment_expression
+	 reduced: initializer_list -> initializer
+5: Number: 2
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+5: COMMA
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: initializer -> assignment_expression
+	 reduced: initializer_list -> initializer_list COMMA initializer
+5: Number: 3
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+5: RIGHT_FLOWER_BRACKET
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: initializer -> assignment_expression
+	 reduced: initializer_list -> initializer_list COMMA initializer
+	 reduced: initializer -> LF initializer_list RF
+	 reduced: init_declarator -> declarator EQ initializer
+	 reduced: init_declarator_list -> init_declarator
+5: SEMICOLON
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+	 reduced: external_declaration -> declaration
+	 reduced: translation_unit -> translation_unit external_declaration
+7: ID: main
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+7: LEFT_ROUND_BRACKET
+7: RIGHT_ROUND_BRACKET
+	 reduced: direct_declarator -> direct_declarator LR RR
+8: LEFT_FLOWER_BRACKET
+	 reduced: declarator -> direct_declarator
+9: INT
+	 reduced: type_specifier -> INT
+9: ID: k
+	 reduced: declaration_specifiers -> type_specifier
+	 reduced: identifier -> ID
+	 reduced: direct_declarator -> identifier
+9: SEMICOLON
+	 reduced: declarator -> direct_declarator
+	 reduced: init_declarator -> declarator
+	 reduced: init_declarator_list -> init_declarator
+	 reduced: declaration -> declaration_specifiers init_declarator_list SEMICOLON
+11: ID: k
+	 reduced: identifier -> ID
+11: EQ
+	 reduced: primary_expression -> identifier
+	 reduced: postfix_expression -> primary_expression
+	 reduced: unary_expression -> postfix_expression
+	 reduced assignment_operator -> EQ
+11: ID: j
+	 reduced: identifier -> ID
+	 reduced: primary_expression -> identifier
+	 reduced: postfix_expression -> primary_expression
+11: STAR
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+11: Number: 3
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+11: PLUS
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: additive_expression -> multiplicative_expression
+11: ID: y
+	 reduced: identifier -> ID
+	 reduced: primary_expression -> identifier
+	 reduced: postfix_expression -> primary_expression
+11: LEFT_SQUARE_BRACKET
+11: Number: 0
+	 reduced: integer_constant -> NUMBER
+	 reduced: constant -> integer_constant
+	 reduced: primary_expression -> constant
+	 reduced: postfix_expression -> primary_expression
+11: RIGHT_SQUARE_BRACKET
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: expression -> assignment_expression
+11: SEMICOLON
+	 reduced: unary_expression -> postfix_expression
+	 reduced: cast_expression -> unary_expression
+	 reduced: multiplicative_expression -> cast_expression
+	 reduced: additive_expression -> additive_expression PLUS multiplicative_expression
+	 reduced: shift_expression -> additive_expression
+	 reduced: relational_expression -> shift_expression
+	 reduced: equality_expression -> relational_expression
+	 reduced: AND_expression -> equality_expression
+	 reduced: exclusive_OR_expression -> AND_expression
+	 reduced: inclusive_OR_expression -> exclusive_OR_expression
+	 reduced: logical_AND_expression -> inclusive_OR_expression
+	 reduced: logical_OR_expression -> logical_AND_expression
+	 reduced: conditional_expression -> logical_OR_expression
+	 reduced: assignment_expression -> conditional_expression
+	 reduced: assignment_expression -> unary_expression assignment_operator assignment_expression
+	 reduced: expression -> assignment_expression
+	 reduced: expression_statement -> expression SEMICOLON
+	 reduced: statement -> expression_statement
+	 reduced: statement_list -> statement
+12: RIGHT_FLOWER_BRACKET
+	 reduced: compound_statement -> LF declaration_list statement_list RF
+	 reduced: function_definition -> declarator compound_statement
+	 reduced: external_declaration -> function_definition
+	 reduced: translation_unit -> translation_unit external_declaration
+

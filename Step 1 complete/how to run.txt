@@ -1,0 +1,9 @@
+Linux-
+-> flex a.l
+-> gcc lex.yy.c
+-> ./a.out input.txt 
+
+Windows-
+-> flex a.l
+-> gcc lex.yy.c
+-> a.exe input.txt
